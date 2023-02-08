@@ -1,22 +1,18 @@
+.hidden{
+    display: none;
+}
 .handle-card {
     padding: 20px 50px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-    background-color: #fff !important;
-    border-radius: 5px;
+    background-color: #fafafa !important;
+    border-radius: 20px;
     max-height: 250px;
-    clear: both;
     text-align: center;
     box-sizing: border-box;
     max-width: 1080px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin: 0 auto;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
 }
 
@@ -26,12 +22,9 @@ form {
 }
 
 .handle-div {
-    position: relative;
     font-size: 16px;
-    display: inline-block;
     box-sizing: border-box;
     width: 300px;
-    max-width: 100%;
     margin: 0;
     padding: 20px 0;
 }
@@ -87,7 +80,28 @@ form {
     visibility: hidden;
     display: block;
 }
+input:focus-visible {
+    border-bottom: 1px solid rgba(6, 255, 243, 0.945);
+    transition: border-bottom 1s ease;
+    outline: 0;
+}
 
+.sectionWrapper {
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-image: initial;
+    border-radius: 5px;
+    padding: 15px;
+    margin:0;
+}
+.dataElement {
+    margin-bottom: 7px;
+}
+ol, ul {
+    list-style: none;
+}
 @media (min-width: 840px) {
     .handle-card{
         width: calc(66.6666666667% - 16px);
