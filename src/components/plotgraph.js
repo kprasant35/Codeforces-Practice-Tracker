@@ -19,8 +19,8 @@ function PlotGraph({userData}){
           ]
         }]
       }
-    return (<div className=''>
-        <Pie data={chartData} style={{height:150}} redraw/>
+    return (<div className='pie-wrapper'>
+        <Pie data={chartData} redraw/>
     </div>);
 }
 

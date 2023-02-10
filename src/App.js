@@ -78,7 +78,7 @@ function App() {
       <Content stats={userStats}/>
       <PlotGraph userData={userData}/>
     </div>
-    <div className={' '+(userStats.solved===undefined?'hidden':'')}>
+    <div className={'rating-container '+(userStats.solved===undefined?'hidden':'')}>
       <PlotRating solvedRating={solvedRating}/>
     </div>
   </div>);

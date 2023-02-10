@@ -6,7 +6,7 @@
     max-height: 250px;
     text-align: center;
     box-sizing: border-box;
-    max-width: 1080px;
+    width: 1080px;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
@@ -105,11 +105,18 @@ h3{
 }
 .rating-wrapper{
     position: relative;
-    min-height: 300px;
+    min-height: 250px;
     width: 1000px;
-  }
-@media (min-width: 840px) {
-    .handle-card{
-        width: calc(66.6666666667% - 16px);
-    }
-  } 
+}
+.pie-wrapper{
+    margin-left: auto;
+    height: 200px;
+    width: 200px;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-image: initial;
+    border-radius: 5px;
+}
+

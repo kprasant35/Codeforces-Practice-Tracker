@@ -2,9 +2,20 @@
   margin: 0 auto;
   align-items: stretch;
 }
- .stats-container{
+.stats-container{
   display: flex;
- }
+  width:700px;
+  max-height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+.rating-container{
+  width: 1050px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 50px auto;
+}
 body {
   margin: 0;
   width: 100%;
