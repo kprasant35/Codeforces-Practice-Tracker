@@ -18,6 +18,11 @@ function PlotRating({solvedRating}){
     const options = {
         responsive: true,
         maintainAspectRatio: false,
+        plugins:{
+            legend: {
+                display: false
+            }
+        }
     }
     return (<div className='rating-wrapper'>
         <Bar data={chartData} options={options} redraw/>
