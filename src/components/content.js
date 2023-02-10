@@ -2,8 +2,12 @@ import React, {useState} from 'react';
 import './components.css';
 
 function Content(props){
+    console.log('stats: ',props.stats);
     const {solved, tried, submission, attempt} = props.stats;
-    return (<div className={'sectionWrapper '+(solved===undefined?'hidden':'')}>
+    
+    
+    return (<div className={'sectionWrapper '}>
+        <h3>Stats in last 30 days</h3>
         
         <ul>
             <li className='dataElements'>
